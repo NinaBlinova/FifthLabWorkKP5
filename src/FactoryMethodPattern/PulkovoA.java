@@ -1,7 +1,7 @@
 package FactoryMethodPattern;
 
-public class Pulkovo extends LoyaltyProgram {
-    public Pulkovo(double cashAvailable, double cardBalance, double ticketPrice) {
+public class PulkovoA extends LoyaltyProgram {
+    public PulkovoA(double cashAvailable, double cardBalance, double ticketPrice) {
         super(cashAvailable, cardBalance, ticketPrice);
     }
 
@@ -31,9 +31,8 @@ public class Pulkovo extends LoyaltyProgram {
 
     @Override
     public String getConditions() {
-        return "Скидка: 30% при наличии более 1500 бонусных баллов;\n" +
-                "Скидка: 20% при наличии более 1000 бонусных баллов;\n" +
-                "Скидка: 10% при наличии более 500 бонусных баллов;\n" +
+        return "Скидка: 15% при наличии более 50000 рублей как на карте, так и наличкой;\n" +
+                "Скидка: 10% при наличии более 20000 рублей как на карте, так и наличкой;\n" +
                 "Бонусные баллы: 6 баллов за каждые 100 рублей при цене билета от 30,000 рублей;\n" +
                 "Бонусные баллы: 4 балла за каждые 100 рублей при цене билета от 20,000 рублей;\n" +
                 "Бонусные баллы: 2 балла за каждые 100 рублей при цене билета от 10,000 рублей.";
